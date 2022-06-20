@@ -4,45 +4,76 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Nathaniel Rodriguez</title>
+        <title>Nathaniel J. Rodriguez</title>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap">
+        <!-- Open Graph image aspect ratio is 1.91:1 | The preferred size is (at least) 1200 x 630 -->
+        <!-- For Twitter, the card image should be 1024x512. -->
 
+        <meta property="og:title" content="Nathaniel J. Rodriguez">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.nathanielrodriguez.me">
+        <meta property="og:image" content="https://www.nathanielrodriguez.me/assets/opengraph-image.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="alt text.">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:creator" content="@watermelonless">
+        
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://unpkg.com/feather-icons"></script>
     </head>
 
     <body>
-        <!--<video autoplay muted src="Personal_Website_Opening.mp4"></video>-->
-        <main>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact-me">Contact</a></li>
+        <section class="left">
+            <div class="blank-space"></div>
+
+            <section class="content">
+                <h1>Nathaniel J. Rodriguez</h1>
+
+                <p>I'm a front-end developer with a formal background in mathematics.</p>
+
+                <nav>
+                    <ul>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/portfolio/">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="social-media-icons">
+                    <li><a href="https://twitter.com/watermelonless"><i data-feather="twitter"></i></a></li>
+                    <li><a href="https://www.github.com/watermelonlesson"><i data-feather="github"></i></a></li>
+                    <li><a href="https://codepen.io/watermelonlesson"><i data-feather="codepen"></i></a></li>
+                    <li><a href="https://www.instagram.com/watermelonlesson"><i data-feather="instagram"></i></a></li>
                 </ul>
-            </nav>
+            </section>
+        </section>
 
-            <h1>Nathaniel Rodriguez</h1>
+        <section class="right">
+            <section class="card wide-card">
+                <h2>Major Blog Title</h2>
+
+                <p>Lorem ipsum dolor sit amet.</p>
+            </section>
             
-            <section id="designer">
-                <h2>Designer</h2>
-
-                <p>With experience designing websites, apps, and even notebooks.</p>
+            <section class="card small-card">
+                <h2>Minor Blog Title</h2>
+                
+                <p>Lorem ipsum dolor sit amet.</p>
             </section>
 
-            <section id="developer">
-                <h2>Developer</h2>
+            <section class="card small-card">                
+                <h2>Minor Blog Title</h2>
 
-                <p>for the web, with the ability to produce desktop and mobile applications.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
             </section>
+        </section>
 
-            <section id="illustrator">
-                <h2>Illustrator</h2>
-
-                <p>on the side. Experienced drawing people, landscapes, and creating animations.</p>
-            </section>
-        </main>
+        <script>
+            feather.replace()
+        </script>
     </body>
 </html>

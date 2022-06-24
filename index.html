@@ -6,6 +6,12 @@
 
         <title>Nathaniel J. Rodriguez</title>
 
+        <!-- Favicon -- -->
+        <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+        <link rel="icon" href="/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+        <link rel="manifest" href="/manifest.webmanifest">
+
         <!-- Open Graph image aspect ratio is 1.91:1 | The preferred size is (at least) 1200 x 630 -->
         <!-- For Twitter, the card image should be 1024x512. -->
 
@@ -22,7 +28,10 @@
         <meta name="twitter:creator" content="@watermelonless">
         
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/card.css">
+
         <script src="https://unpkg.com/feather-icons"></script>
+        <script src="https://unpkg.com/@tryghost/content-api@1.11.0/umd/content-api.min.js"></script>
     </head>
 
     <body>
@@ -36,10 +45,10 @@
 
                 <nav>
                     <ul>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/portfolio/">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/blog/"><i data-feather="layout"></i> &nbsp; Blog</i></a></li>
+                        <li><a href="/portfolio/"><i data-feather="book-open"></i> &nbsp; Portfolio</a></li>
+                        <li><a href="#"><i data-feather="book"></i> &nbsp; Résumé</a></li>
+                        <li><a href="#"><i data-feather="mail"></i> &nbsp; Contact</a></li>
                     </ul>
                 </nav>
 
@@ -53,27 +62,38 @@
         </section>
 
         <section class="right">
-            <section class="card wide-card">
-                <h2>Major Blog Title</h2>
+            <figure class="card wide-card card-incomplete">
+                <img src="" alt="" width="600" height="300">
 
-                <p>Lorem ipsum dolor sit amet.</p>
-            </section>
+                <figcaption>
+                    <h2>Major Blog Title</h2>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </figcaption>
+            </figure>
             
-            <section class="card small-card">
-                <h2>Minor Blog Title</h2>
-                
-                <p>Lorem ipsum dolor sit amet.</p>
-            </section>
+            <figure class="card small-card card-incomplete">
+                <img src="" alt="" width="600" height="300">
 
-            <section class="card small-card">                
-                <h2>Minor Blog Title</h2>
+                <figcaption>
+                    <h2>Major Blog Title</h2>
 
-                <p>Lorem ipsum dolor sit amet.</p>
-            </section>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="card small-card card-incomplete">
+                <img src="" alt="" width="600" height="300">
+
+                <figcaption>
+                    <h2>Major Blog Title</h2>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </figcaption>
+            </figure>
         </section>
 
-        <script>
-            feather.replace()
-        </script>
+        <script src="js/ghost.js"></script>
+        <script>feather.replace();</script>
     </body>
 </html>

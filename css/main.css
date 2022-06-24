@@ -15,6 +15,10 @@
     font-size: 1rem;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -23,11 +27,10 @@ body {
     grid-template-rows: 100%;
     grid-template-columns: 20% 80%;
 
-    font-size: 10px;
     font-family: var(--font-family);
 
     color: var(--color-scheme-k);
-    background-color: var(--color-scheme-r);
+    background-color: var(--color-scheme-b);
 }
 
 section.right {
@@ -39,6 +42,7 @@ section.right {
     text-align: center;
     align-content: center;
     justify-content: center;
+    background-color: var(--color-scheme-r);
 }
 
 section.right > section.card {
@@ -110,34 +114,43 @@ section.left > section.content > p {
     justify-self: center;
 }
 
+nav, ul, li, a {
+    box-sizing: border-box;
+}
 
 section.left > section.content > nav {
-    justify-self: center;
     width: 70%;
+    justify-self: center;
 
-    border: 0.3rem solid var(--color-scheme-k);
-
-    border-left: 0;
-    border-right: 0;
-
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-color: var(--color-scheme-r);
 }
 
 section.left > section.content > nav > ul {
+    width: 100%;
     display: grid;
 
     align-content: center;
     justify-content: center;
 }
 
-section.left > section.content > nav > ul > li > a {
-    color: var(--color-scheme-w);
-    font-size: 1.3rem;
+section.left > section.content > nav > ul > li {
+    width: 100%;
 }
 
-section.left > section.content > nav > ul > li > a::after {
-    content: ' \2197';
+section.left > section.content > nav > ul > li > a {
+    width: 100%;
+    font-size: 2rem;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--color-scheme-w);
+}
+
+section.left > section.content > nav > ul > li > a:hover {
+    text-decoration: underline;
+    background-color: var(--color-scheme-g);
 }
 
 ul {
@@ -175,5 +188,41 @@ ul.social-media-icons > li > a {
         display: flex;
     }
 
+    section.left > section.content {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 50%);
+    }
 
+    section.left > section.content > h1 {
+        grid-column: 1;
+    }
+
+    section.left > section.content > p {
+        grid-column: 1;
+    }
+
+    section.left > section.content > nav {
+        border: 0;
+        grid-row: 1 / 3;
+        grid-column: 2;
+
+        justify-self: end;
+    }
+
+    section.left > section.content > nav > ul {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    section.left > section.content > ul.social-media-icons {
+        display: none;
+    }
 }
